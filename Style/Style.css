@@ -4,7 +4,7 @@
 
 body {
     background-color: rgb(5, 0, 54);
-    color: rgb(255, 0, 251);
+    color: rgb(255, 182, 254);
     margin: 0;
     font-family: sans-serif;
 }
@@ -15,17 +15,21 @@ header {
     border: solid 1px rgb(255, 0, 251);
     border-radius: 10px;
     padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 .nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    gap: 10px;
 }
 
 .nav li {
-    float: left;
+    float: right;
 }
 
 .nav li a {
@@ -40,4 +44,16 @@ header {
     background-color: rgb(255, 182, 254);
     color: rgb(5, 0, 54);
     border-radius: 10px;
+}
+
+#inicio {
+    background-color: rgb(255, 182, 254);
+    color: rgb(5, 0, 54);
+    border: solid 1px rgb(255, 0, 251);
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    margin-inline: 5%;
+    margin-top: 5%;    
 }
