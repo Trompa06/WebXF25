@@ -70,9 +70,6 @@ body {
   }
 }
 
-/* Beneficios */
-
-
 /* Productos */
 .product-card img {
   height: 200px;
@@ -100,35 +97,7 @@ body {
   flex: 1;
 }
 
-/* Testimonios */
-.carousel-item blockquote {
-  margin-bottom: 2rem;
-}
-
-#testimonials .carousel-inner .row {
-  align-items: stretch;
-}
-#testimonials .carousel-item .col-md-6 {
-  display: flex;
-}
-#testimonials .carousel-item blockquote {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  margin-bottom: 0;
-}
-
-
-
-.carousel-item.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 /* Comunidad */
-
-
 .comunidad-text {
   text-align: center;
   color: #7289da;
@@ -160,28 +129,6 @@ body {
       0 0 20px #7289da,
       0 0 30px rgba(114, 137, 218, 0.8),
       0 0 40px rgba(114, 137, 218, 0.6);
-  }
-}
-
-/* Boton de Discord */
-
-
-.discord-btn:hover {
-  background-color: #7289da;
-  color: #fff;
-  border-color: #fff;
-  box-shadow:
-    0 0 15px #7289da,
-    0 0 25px rgba(114, 137, 218, 0.7);
-  text-shadow: none;
-}
-
-@keyframes discord-pulse {
-  0%, 100% {
-    text-shadow: 0 0 5px #7289da, 0 0 10px rgba(114, 137, 218, 0.5);
-  }
-  50% {
-    text-shadow: 0 0 10px #7289da, 0 0 20px rgba(114, 137, 218, 0.8);
   }
 }
 
@@ -263,7 +210,7 @@ body {
   width: auto;
   border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(67, 134, 206, 0.3);
+  box-shadow: 0 4px 12px rgba(1, 119, 245, 0.692);
   transition: transform 0.3s ease;
 }
 
@@ -279,8 +226,6 @@ body {
     transform: translateX(-50%);
   }
 }
-
-
 
 /* Media Queries */
 @media (max-width: 992px) {
