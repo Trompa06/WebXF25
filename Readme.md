@@ -1,0 +1,1 @@
+Esto es el proyecto de la página web de Xics Fadrins 2025 🐷.
