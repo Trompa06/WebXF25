@@ -6,43 +6,43 @@ body {
 /* Navbar */
 .navbar {
   background-color: #fff !important;
-  box-shadow: 0 4px 10px rgb(255, 0, 170);
+  box-shadow: 0 4px 10px #ff69b4;
   transition: background-color 0.3s ease;
 }
 
 .navbar .nav-link {
-  color: rgb(255, 0, 170);
+  color: #ff69b4;
   transition: color 0.3s ease;
 }
 
 .navbar.scrolled .nav-link {
-  color: rgb(255, 0, 170); 
+  color: #ff69b4; 
 }
 
 .navbar .nav-link:hover {
-  color: #00034e;
+  color: #004080;
 }
 
 /* Hero Section */
 .hero {
   background: url('https://images.unsplash.com/photo-1598970434795-0c54fe7c0642') no-repeat center center/cover;
   height: 100vh;
-  color: rgba(0, 38, 255, 0.78);
+  color: rgba(0,123,255,0.78);
   display: flex;
   align-items: center;
   position: relative;
 }
 
 .overlay {
-  background-color: rgba(255, 0, 170, 0.78);
+  background-color: rgba(255,105,180,0.78);
   padding: 4rem;
   border-radius: 1rem;
 }
 
 .btn-ver-productos {
   display: inline-block;
-  background-color: #2901ba;
-  color: rgb(255, 0, 170);
+  background-color: #007bff;
+  color: #ff69b4;
   font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
@@ -51,30 +51,27 @@ body {
   border-radius: 12px;
   text-decoration: none;
   text-align: center;
-  box-shadow: 0 0 12px #000478;
+  box-shadow: 0 0 12px #0056b3;
   transition: all 0.3s ease;
   animation: ver-productos-pulse 2.5s infinite;
 }
 
 .btn-ver-productos:hover {
-  background-color: #0008ff;
-  box-shadow: 0 0 20px #1a13a6, 0 0 30px #000478;
+  background-color: #007bff;
+  box-shadow: 0 0 20px #1a13a6, 0 0 30px #0056b3;
 }
 
 @keyframes ver-productos-pulse {
   0%, 100% {
-    box-shadow: 0 0 10px #000478;
+    box-shadow: 0 0 10px #0056b3;
   }
   50% {
-    box-shadow: 0 0 20px #0008ff;
+    box-shadow: 0 0 20px #007bff;
   }
 }
 
 /* Beneficios */
-.icon-circle {
-  font-size: 2rem;
-  color: #198754;
-}
+
 
 /* Productos */
 .product-card img {
@@ -122,11 +119,7 @@ body {
   margin-bottom: 0;
 }
 
-.carousel-item {
-  opacity: 0;
-  transform: translateX(30px);
-  transition: opacity 1s ease, transform 1s ease;
-}
+
 
 .carousel-item.active {
   opacity: 1;
@@ -134,11 +127,7 @@ body {
 }
 
 /* Comunidad */
-.comunidad {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .comunidad-text {
   text-align: center;
@@ -175,29 +164,7 @@ body {
 }
 
 /* Boton de Discord */
-.discord-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background-color: #2c2f33;
-  color: #7289da;
-  border: 2px solid #7289da;
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 12px;
-  text-decoration: none;
-  text-shadow:
-    0 0 5px #7289da,
-    0 0 10px rgba(114, 137, 218, 0.5);
-  box-shadow:
-    0 0 10px rgba(114, 137, 218, 0.2),
-    inset 0 0 5px rgba(114, 137, 218, 0.2);
-  transition: all 0.3s ease;
-  animation: discord-pulse 3s infinite;
-}
+
 
 .discord-btn:hover {
   background-color: #7289da;
@@ -218,125 +185,43 @@ body {
   }
 }
 
-/* Instalador App */
-.app-installer-section {
-  background-color: #000000;
-}
-
-.instalador {  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-}
-
-.instalador-titulo {
-  text-align: center;
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 1px;
-}
-
-.btn-descarga {
-  display: block;
-  width: 100%;
-  text-align: center;
-  background-color: transparent;
-  color: #00ff90;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 0.75rem 1.25rem;
-  border: 2px solid #00ff90;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  text-shadow: 0 0 8px rgba(0, 255, 144, 0.5);
-  box-shadow: 0 0 10px rgba(0, 255, 144, 0.2);
-  animation: descarga-pulse 3s infinite;
-}
-
-.btn-descarga:hover {
-  background-color: #00ff90;
-  color: #000;
-  box-shadow: 0 0 20px #00ff90, 0 0 30px rgba(0, 255, 144, 0.6);
-  text-shadow: none;
-}
-
-@keyframes descarga-pulse {
-  0%, 100% {
-    box-shadow: 0 0 10px rgba(0, 255, 144, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(0, 255, 144, 0.5);
-  }
-}
-
-
-/* Contacto */
-.contacto{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-}
-
-.contact-section {
-  background-color: #47a076;
-  color: white;
-}
-
-.contact-section spline-viewer {
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-.contact-section input,
-.contact-section textarea {
-  border-radius: 0.5rem;
-}
+/* Video */
 
 #tutorial {
-  background: linear-gradient(135deg, #f5f5f5, #eafaf1);
+  background: linear-gradient(135deg, #fff0fa, #e0f0ff); /* fondo suave rosa-azul */
   padding: 4rem 1rem;
   font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
 
 .tutorial-title {
-  color: #47a076;
+  color: #ff69b4; /* rosa principal */
   font-size: 2.5rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 0 5px #47a076, 0 0 10px rgba(71, 160, 118, 0.5);
+  text-shadow: 0 0 5px #007bff, 0 0 10px rgba(0, 123, 255, 0.5); /* azul como sombra */
   animation: tutorial-pulse 3s infinite;
 }
 
 @keyframes tutorial-pulse {
   0%, 100% {
-    text-shadow: 0 0 5px #47a076, 0 0 10px rgba(71, 160, 118, 0.5);
+    text-shadow: 0 0 5px #007bff, 0 0 10px rgba(0, 123, 255, 0.5);
   }
   50% {
-    text-shadow: 0 0 10px #47a076, 0 0 20px rgba(71, 160, 118, 0.8);
+    text-shadow: 0 0 10px #007bff, 0 0 20px rgba(0, 123, 255, 0.8);
   }
 }
 
 .tutorial-img {
   max-width: 120px;
   height: auto;
-  filter: drop-shadow(0 0 10px rgba(71, 160, 118, 0.3));
+  filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.3)); /* sombra rosa */
 }
 
 .ratio {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 25px rgba(71, 160, 118, 0.25);
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.5); /* rosa brillante */
   transition: transform 0.3s ease;
 }
 
