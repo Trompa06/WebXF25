@@ -1,0 +1,23 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff !important;
+  box-shadow: 0 4px 10px #ff69b4;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link {
+  color: #ff69b4;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled .nav-link {
+  color: #ff69b4; 
+}
+
+.navbar .nav-link:hover {
+  color: #004080;
+}
