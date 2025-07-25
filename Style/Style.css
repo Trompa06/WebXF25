@@ -252,8 +252,9 @@ body {
 .slider-track {
   display: flex;
   gap: 1rem;
-  animation: scrollSlider 30s linear infinite;
+  animation: scrollSlider 120s linear infinite;
   padding: 1rem 0;
+  width: max-content;
 }
 
 .slider-track img {
@@ -262,7 +263,7 @@ body {
   width: auto;
   border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(67, 134, 206, 0.3);
   transition: transform 0.3s ease;
 }
 
